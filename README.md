@@ -1,5 +1,6 @@
 # Numpy
 What is NumPy?
+
 NumPy is the fundamental package for scientific computing in Python. It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more.
 
 At the core of the NumPy package, is the ndarray object. This encapsulates n-dimensional arrays of homogeneous data types, with many operations being performed in compiled code for performance. There are several important differences between NumPy arrays and the standard Python sequences:
@@ -15,12 +16,13 @@ A growing plethora of scientific and mathematical Python-based packages are usin
 The points about sequence size and speed are particularly important in scientific computing. As a simple example, consider the case of multiplying each element in a 1-D sequence with the corresponding element in another sequence of the same length. If the data are stored in two Python lists, a and b, we could iterate over each element
 
 Why is NumPy Fast?
+
 Vectorization describes the absence of any explicit looping, indexing, etc., in the code - these things are taking place, of course, just “behind the scenes” in optimized, pre-compiled C code. Vectorized code has many advantages, among which are:
 
-vectorized code is more concise and easier to read
+* Vectorized code is more concise and easier to read
 
-fewer lines of code generally means fewer bugs
+* Fewer lines of code generally means fewer bugs
 
-the code more closely resembles standard mathematical notation (making it easier, typically, to correctly code mathematical constructs)
+* The code more closely resembles standard mathematical notation (making it easier, typically, to correctly code mathematical constructs)
 
-vectorization results in more “Pythonic” code. Without vectorization, our code would be littered with inefficient and difficult to read for loops.
+* Vectorization results in more “Pythonic” code. Without vectorization, our code would be littered with inefficient and difficult to read for loops.
